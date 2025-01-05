@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
-    <gazebo>
+    <!-- <gazebo>
         <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
             <render_engine>ogre</render_engine>
         </plugin>
-    </gazebo>
+    </gazebo> -->
 
     <joint name="camera_joint" type="fixed">
         <parent link="chassis"/>
