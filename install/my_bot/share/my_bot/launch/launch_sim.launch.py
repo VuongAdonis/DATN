@@ -1,0 +1,1 @@
+/home/DATA/DATN/ros_ws/src/my_bot/launch/launch_sim.launch.py

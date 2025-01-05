@@ -1,0 +1,52 @@
+[0.011s] Invoking command in '/home/DATA/DATN/ros_ws/build/my_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/DATA/DATN/ros_ws/src/my_bot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/DATA/DATN/ros_ws/install/my_bot
+[0.153s] -- The C compiler identification is GNU 13.3.0
+[0.255s] -- The CXX compiler identification is GNU 13.3.0
+[0.274s] -- Detecting C compiler ABI info
+[0.362s] -- Detecting C compiler ABI info - done
+[0.373s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.374s] -- Detecting C compile features
+[0.375s] -- Detecting C compile features - done
+[0.385s] -- Detecting CXX compiler ABI info
+[0.489s] -- Detecting CXX compiler ABI info - done
+[0.500s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.500s] -- Detecting CXX compile features
+[0.501s] -- Detecting CXX compile features - done
+[0.509s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.657s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.746s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.807s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.933s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.938s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.938s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.939s] -- Added test 'lint_cmake' to check CMake code style
+[0.941s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.944s] -- Added test 'xmllint' to check XML markup files
+[0.947s] -- Configuring done (0.9s)
+[0.950s] -- Generating done (0.0s)
+[0.950s] -- Build files have been written to: /home/DATA/DATN/ros_ws/build/my_bot
+[0.956s] Invoked command in '/home/DATA/DATN/ros_ws/build/my_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/DATA/DATN/ros_ws/src/my_bot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/DATA/DATN/ros_ws/install/my_bot
+[0.957s] Invoking command in '/home/DATA/DATN/ros_ws/build/my_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/DATA/DATN/ros_ws/build/my_bot -- -j8 -l8
+[0.993s] Invoked command in '/home/DATA/DATN/ros_ws/build/my_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/DATA/DATN/ros_ws/build/my_bot -- -j8 -l8
+[1.023s] Invoking command in '/home/DATA/DATN/ros_ws/build/my_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/DATA/DATN/ros_ws/build/my_bot
+[1.031s] -- Install configuration: ""
+[1.032s] -- Execute custom install script
+[1.032s] -- Symlinking: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/config/empty.yaml
+[1.041s] -- Symlinking: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/description/robot.urdf.xacro
+[1.051s] -- Symlinking: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/launch/rsp.launch.py
+[1.060s] -- Symlinking: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/worlds/empty.world
+[1.069s] -- Symlinking: /home/DATA/DATN/ros_ws/install/my_bot/share/ament_index/resource_index/package_run_dependencies/my_bot
+[1.077s] -- Symlinking: /home/DATA/DATN/ros_ws/install/my_bot/share/ament_index/resource_index/parent_prefix_path/my_bot
+[1.088s] -- Symlinking: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.sh
+[1.097s] -- Symlinking: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.dsv
+[1.106s] -- Symlinking: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/environment/path.sh
+[1.115s] -- Symlinking: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/environment/path.dsv
+[1.125s] -- Symlinking: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/local_setup.bash
+[1.135s] -- Symlinking: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/local_setup.sh
+[1.144s] -- Symlinking: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/local_setup.zsh
+[1.153s] -- Symlinking: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/local_setup.dsv
+[1.162s] -- Symlinking: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/package.dsv
+[1.171s] -- Symlinking: /home/DATA/DATN/ros_ws/install/my_bot/share/ament_index/resource_index/packages/my_bot
+[1.181s] -- Symlinking: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/cmake/my_botConfig.cmake
+[1.190s] -- Symlinking: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/cmake/my_botConfig-version.cmake
+[1.199s] -- Symlinking: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/package.xml
+[1.209s] Invoked command in '/home/DATA/DATN/ros_ws/build/my_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/DATA/DATN/ros_ws/build/my_bot
