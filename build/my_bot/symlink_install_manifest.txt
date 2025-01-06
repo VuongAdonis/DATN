@@ -1,5 +1,7 @@
 /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/config/drive_bot.rviz
 /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/config/empty.yaml
+/home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/config/joystick.yaml
+/home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/config/mapper_params_online_async.yaml
 /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/config/my_controllers.yaml
 /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/config/view_bot.rviz
 /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/description/bridge_parameters.yaml
@@ -11,6 +13,7 @@
 /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/description/robot_core.xacro
 /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/description/ros2_control.xacro
 /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/launch/gazebo.launch.py
+/home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/launch/joystick.launch.py
 /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/launch/launch_backup
 /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/launch/launch_sim.launch.py
 /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/launch/rsp.launch.py
