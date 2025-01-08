@@ -3,6 +3,8 @@
 /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/config/joystick.yaml
 /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/config/mapper_params_online_async.yaml
 /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/config/my_controllers.yaml
+/home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/config/rviz_config.rviz
+/home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/config/twist_mux.yaml
 /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/config/view_bot.rviz
 /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/description/bridge_parameters.yaml
 /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/description/camera.xacro

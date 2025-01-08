@@ -1,0 +1,655 @@
+[0.000000] (-) TimerEvent: {}
+[0.000300] (my_bot) JobQueued: {'identifier': 'my_bot', 'dependencies': OrderedDict()}
+[0.000556] (web_video_server) JobQueued: {'identifier': 'web_video_server', 'dependencies': OrderedDict()}
+[0.000582] (my_bot) JobStarted: {'identifier': 'my_bot'}
+[0.009912] (web_video_server) JobStarted: {'identifier': 'web_video_server'}
+[0.014996] (my_bot) JobProgress: {'identifier': 'my_bot', 'progress': 'cmake'}
+[0.015839] (my_bot) JobProgress: {'identifier': 'my_bot', 'progress': 'build'}
+[0.016654] (my_bot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/DATA/DATN/ros_ws/build/my_bot', '--', '-j8', '-l8'], 'cwd': '/home/DATA/DATN/ros_ws/build/my_bot', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'adonis', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/adonis', 'OLDPWD': '/home/DATA/DATN/ros_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3239', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'adonis', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'adonis', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/adonis-Nitro-AN515-55:@/tmp/.ICE-unix/3207,unix/adonis-Nitro-AN515-55:/tmp/.ICE-unix/3207', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c1d7b542_c385_4288_bea0_c28bf49be8bf', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.118', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/DATA/DATN/ros_ws/build/my_bot', 'QT_QPA_PLATFORM': 'xcb', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.020502] (web_video_server) JobProgress: {'identifier': 'web_video_server', 'progress': 'cmake'}
+[0.020897] (web_video_server) Command: {'cmd': ['/usr/bin/cmake', '/home/DATA/DATN/ros_ws/src/web_video_server', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/DATA/DATN/ros_ws/install/web_video_server'], 'cwd': '/home/DATA/DATN/ros_ws/build/web_video_server', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'adonis', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/adonis', 'OLDPWD': '/home/DATA/DATN/ros_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3239', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'adonis', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'adonis', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/adonis-Nitro-AN515-55:@/tmp/.ICE-unix/3207,unix/adonis-Nitro-AN515-55:/tmp/.ICE-unix/3207', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c1d7b542_c385_4288_bea0_c28bf49be8bf', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.118', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/DATA/DATN/ros_ws/build/web_video_server', 'QT_QPA_PLATFORM': 'xcb', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.064238] (my_bot) CommandEnded: {'returncode': 0}
+[0.084898] (my_bot) JobProgress: {'identifier': 'my_bot', 'progress': 'install'}
+[0.095936] (my_bot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/DATA/DATN/ros_ws/build/my_bot'], 'cwd': '/home/DATA/DATN/ros_ws/build/my_bot', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'adonis', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/adonis', 'OLDPWD': '/home/DATA/DATN/ros_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3239', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'adonis', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'adonis', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/adonis-Nitro-AN515-55:@/tmp/.ICE-unix/3207,unix/adonis-Nitro-AN515-55:/tmp/.ICE-unix/3207', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c1d7b542_c385_4288_bea0_c28bf49be8bf', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.118', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/DATA/DATN/ros_ws/build/my_bot', 'QT_QPA_PLATFORM': 'xcb', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099814] (-) TimerEvent: {}
+[0.106271] (my_bot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.107665] (my_bot) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.108338] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/config/drive_bot.rviz\n'}
+[0.108551] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/config/empty.yaml\n'}
+[0.108720] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/config/joystick.yaml\n'}
+[0.108879] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/config/mapper_params_online_async.yaml\n'}
+[0.109049] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/config/my_controllers.yaml\n'}
+[0.109238] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/config/rviz_config.rviz\n'}
+[0.109428] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/config/twist_mux.yaml\n'}
+[0.109626] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/config/view_bot.rviz\n'}
+[0.109842] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/description/bridge_parameters.yaml\n'}
+[0.110009] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/description/camera.xacro\n'}
+[0.110192] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/description/gazebo_control.xacro\n'}
+[0.110341] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/description/inertial_macros.xacro\n'}
+[0.110525] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/description/lidar.xacro\n'}
+[0.110731] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/description/robot.urdf.xacro\n'}
+[0.110855] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/description/robot_core.xacro\n'}
+[0.111011] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/description/ros2_control.xacro\n'}
+[0.111303] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/launch/gazebo.launch.py\n'}
+[0.111474] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/launch/joystick.launch.py\n'}
+[0.111632] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/launch/launch_backup\n'}
+[0.111783] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/launch/launch_sim.launch.py\n'}
+[0.111931] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/launch/rsp.launch.py\n'}
+[0.112085] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/worlds/empty.world\n'}
+[0.112248] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/worlds/save_world.sdf\n'}
+[0.112398] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/ament_index/resource_index/package_run_dependencies/my_bot\n'}
+[0.112570] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/ament_index/resource_index/parent_prefix_path/my_bot\n'}
+[0.112747] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.sh\n'}
+[0.112916] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.dsv\n'}
+[0.113097] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/environment/path.sh\n'}
+[0.113262] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/environment/path.dsv\n'}
+[0.113417] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/local_setup.bash\n'}
+[0.113585] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/local_setup.sh\n'}
+[0.113740] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/local_setup.zsh\n'}
+[0.113902] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/local_setup.dsv\n'}
+[0.114064] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/package.dsv\n'}
+[0.124612] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/ament_index/resource_index/packages/my_bot\n'}
+[0.124837] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/cmake/my_botConfig.cmake\n'}
+[0.124952] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/cmake/my_botConfig-version.cmake\n'}
+[0.125054] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/my_bot/share/my_bot/package.xml\n'}
+[0.127087] (my_bot) CommandEnded: {'returncode': 0}
+[0.173510] (my_bot) JobEnded: {'identifier': 'my_bot', 'rc': 0}
+[0.178759] (web_video_server) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.199946] (-) TimerEvent: {}
+[0.298786] (web_video_server) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.300019] (-) TimerEvent: {}
+[0.323133] (web_video_server) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400124] (-) TimerEvent: {}
+[0.421533] (web_video_server) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.432762] (web_video_server) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.433310] (web_video_server) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.434029] (web_video_server) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.444043] (web_video_server) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500205] (-) TimerEvent: {}
+[0.547507] (web_video_server) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.558323] (web_video_server) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.558602] (web_video_server) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.559098] (web_video_server) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.593827] (web_video_server) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[0.600345] (-) TimerEvent: {}
+[0.700688] (-) TimerEvent: {}
+[0.792274] (web_video_server) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.800778] (-) TimerEvent: {}
+[0.878730] (web_video_server) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.900874] (-) TimerEvent: {}
+[0.957469] (web_video_server) StdoutLine: {'line': b'-- Found async_web_server_cpp: 2.0.0 (/opt/ros/jazzy/share/async_web_server_cpp/cmake)\n'}
+[1.001000] (-) TimerEvent: {}
+[1.101242] (-) TimerEvent: {}
+[1.111547] (web_video_server) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found suitable version "1.83.0", minimum required is "1.83.0") found components: filesystem regex thread \n'}
+[1.125483] (web_video_server) StdoutLine: {'line': b'-- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)\n'}
+[1.201336] (-) TimerEvent: {}
+[1.226324] (web_video_server) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.249007] (web_video_server) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.277193] (web_video_server) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.301440] (-) TimerEvent: {}
+[1.308422] (web_video_server) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.401538] (-) TimerEvent: {}
+[1.501822] (-) TimerEvent: {}
+[1.559830] (web_video_server) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[1.565589] (web_video_server) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.601948] (-) TimerEvent: {}
+[1.674606] (web_video_server) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[1.702078] (-) TimerEvent: {}
+[1.704324] (web_video_server) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[1.731498] (web_video_server) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.802193] (-) TimerEvent: {}
+[1.851203] (web_video_server) StdoutLine: {'line': b'-- Found image_transport: 5.1.4 (/opt/ros/jazzy/share/image_transport/cmake)\n'}
+[1.902340] (-) TimerEvent: {}
+[1.904834] (web_video_server) StdoutLine: {'line': b'-- Found rclcpp_components: 28.1.5 (/opt/ros/jazzy/share/rclcpp_components/cmake)\n'}
+[1.949241] (web_video_server) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.6.0") \n'}
+[1.957688] (web_video_server) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system \n'}
+[1.961966] (web_video_server) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1") \n'}
+[1.962889] (web_video_server) StdoutLine: {'line': b"-- Checking for module 'libavcodec'\n"}
+[1.977741] (web_video_server) StdoutLine: {'line': b'--   Found libavcodec, version 60.31.102\n'}
+[2.002431] (-) TimerEvent: {}
+[2.013272] (web_video_server) StdoutLine: {'line': b"-- Checking for module 'libavformat'\n"}
+[2.028256] (web_video_server) StdoutLine: {'line': b'--   Found libavformat, version 60.16.100\n'}
+[2.060899] (web_video_server) StdoutLine: {'line': b"-- Checking for module 'libavutil'\n"}
+[2.074370] (web_video_server) StdoutLine: {'line': b'--   Found libavutil, version 58.29.100\n'}
+[2.102529] (-) TimerEvent: {}
+[2.106526] (web_video_server) StdoutLine: {'line': b"-- Checking for module 'libswscale'\n"}
+[2.121583] (web_video_server) StdoutLine: {'line': b'--   Found libswscale, version 7.5.100\n'}
+[2.158729] (web_video_server) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[2.202628] (-) TimerEvent: {}
+[2.302933] (-) TimerEvent: {}
+[2.312574] (web_video_server) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.316673] (web_video_server) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.316865] (web_video_server) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[2.318306] (web_video_server) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.319663] (web_video_server) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.323884] (web_video_server) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.324070] (web_video_server) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.326211] (web_video_server) StdoutLine: {'line': b'-- Configuring done (2.3s)\n'}
+[2.360515] (web_video_server) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[2.362446] (web_video_server) StdoutLine: {'line': b'-- Build files have been written to: /home/DATA/DATN/ros_ws/build/web_video_server\n'}
+[2.375648] (web_video_server) CommandEnded: {'returncode': 0}
+[2.376821] (web_video_server) JobProgress: {'identifier': 'web_video_server', 'progress': 'build'}
+[2.376856] (web_video_server) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/DATA/DATN/ros_ws/build/web_video_server', '--', '-j8', '-l8'], 'cwd': '/home/DATA/DATN/ros_ws/build/web_video_server', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'adonis', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/adonis', 'OLDPWD': '/home/DATA/DATN/ros_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3239', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'adonis', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'adonis', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/adonis-Nitro-AN515-55:@/tmp/.ICE-unix/3207,unix/adonis-Nitro-AN515-55:/tmp/.ICE-unix/3207', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c1d7b542_c385_4288_bea0_c28bf49be8bf', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.118', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/DATA/DATN/ros_ws/build/web_video_server', 'QT_QPA_PLATFORM': 'xcb', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[2.403041] (-) TimerEvent: {}
+[2.440235] (web_video_server) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/libav_streamer.cpp.o\x1b[0m\n'}
+[2.440637] (web_video_server) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/multipart_stream.cpp.o\x1b[0m\n'}
+[2.441143] (web_video_server) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/vp8_streamer.cpp.o\x1b[0m\n'}
+[2.441325] (web_video_server) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/web_video_server.cpp.o\x1b[0m\n'}
+[2.441464] (web_video_server) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/image_streamer.cpp.o\x1b[0m\n'}
+[2.441597] (web_video_server) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/vp9_streamer.cpp.o\x1b[0m\n'}
+[2.441728] (web_video_server) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/ros_compressed_streamer.cpp.o\x1b[0m\n'}
+[2.441858] (web_video_server) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/h264_streamer.cpp.o\x1b[0m\n'}
+[2.503315] (-) TimerEvent: {}
+[2.606223] (-) TimerEvent: {}
+[2.706546] (-) TimerEvent: {}
+[2.806872] (-) TimerEvent: {}
+[2.907238] (-) TimerEvent: {}
+[3.007658] (-) TimerEvent: {}
+[3.110566] (-) TimerEvent: {}
+[3.211066] (-) TimerEvent: {}
+[3.311719] (-) TimerEvent: {}
+[3.413619] (-) TimerEvent: {}
+[3.515221] (-) TimerEvent: {}
+[3.615903] (-) TimerEvent: {}
+[3.719359] (-) TimerEvent: {}
+[3.819855] (-) TimerEvent: {}
+[3.920406] (-) TimerEvent: {}
+[4.021074] (-) TimerEvent: {}
+[4.121642] (-) TimerEvent: {}
+[4.224547] (-) TimerEvent: {}
+[4.324926] (-) TimerEvent: {}
+[4.426648] (-) TimerEvent: {}
+[4.527502] (-) TimerEvent: {}
+[4.630146] (-) TimerEvent: {}
+[4.730641] (-) TimerEvent: {}
+[4.832245] (-) TimerEvent: {}
+[4.933272] (-) TimerEvent: {}
+[5.035520] (-) TimerEvent: {}
+[5.136125] (-) TimerEvent: {}
+[5.240200] (-) TimerEvent: {}
+[5.340780] (-) TimerEvent: {}
+[5.441403] (-) TimerEvent: {}
+[5.542091] (-) TimerEvent: {}
+[5.646075] (-) TimerEvent: {}
+[5.746541] (-) TimerEvent: {}
+[5.846952] (-) TimerEvent: {}
+[5.949749] (-) TimerEvent: {}
+[6.051712] (-) TimerEvent: {}
+[6.154252] (-) TimerEvent: {}
+[6.254677] (-) TimerEvent: {}
+[6.355086] (-) TimerEvent: {}
+[6.455478] (-) TimerEvent: {}
+[6.558439] (-) TimerEvent: {}
+[6.659125] (-) TimerEvent: {}
+[6.762656] (-) TimerEvent: {}
+[6.863178] (-) TimerEvent: {}
+[6.963599] (-) TimerEvent: {}
+[7.067845] (-) TimerEvent: {}
+[7.169215] (-) TimerEvent: {}
+[7.274179] (-) TimerEvent: {}
+[7.375483] (-) TimerEvent: {}
+[7.479122] (-) TimerEvent: {}
+[7.583580] (-) TimerEvent: {}
+[7.685748] (-) TimerEvent: {}
+[7.786267] (-) TimerEvent: {}
+[7.893284] (-) TimerEvent: {}
+[7.999252] (-) TimerEvent: {}
+[8.099799] (-) TimerEvent: {}
+[8.200393] (-) TimerEvent: {}
+[8.301777] (-) TimerEvent: {}
+[8.404643] (-) TimerEvent: {}
+[8.509371] (-) TimerEvent: {}
+[8.609820] (-) TimerEvent: {}
+[8.713224] (-) TimerEvent: {}
+[8.815689] (-) TimerEvent: {}
+[8.919635] (-) TimerEvent: {}
+[9.020191] (-) TimerEvent: {}
+[9.120697] (-) TimerEvent: {}
+[9.224810] (-) TimerEvent: {}
+[9.325383] (-) TimerEvent: {}
+[9.429242] (-) TimerEvent: {}
+[9.529694] (-) TimerEvent: {}
+[9.634255] (-) TimerEvent: {}
+[9.734801] (-) TimerEvent: {}
+[9.841691] (-) TimerEvent: {}
+[9.942289] (-) TimerEvent: {}
+[10.044777] (-) TimerEvent: {}
+[10.147092] (-) TimerEvent: {}
+[10.247873] (-) TimerEvent: {}
+[10.349510] (-) TimerEvent: {}
+[10.452456] (-) TimerEvent: {}
+[10.552876] (-) TimerEvent: {}
+[10.655368] (-) TimerEvent: {}
+[10.760279] (-) TimerEvent: {}
+[10.860707] (-) TimerEvent: {}
+[10.963686] (-) TimerEvent: {}
+[11.064148] (-) TimerEvent: {}
+[11.167509] (-) TimerEvent: {}
+[11.270824] (-) TimerEvent: {}
+[11.375897] (-) TimerEvent: {}
+[11.479287] (-) TimerEvent: {}
+[11.579799] (-) TimerEvent: {}
+[11.680444] (-) TimerEvent: {}
+[11.782327] (-) TimerEvent: {}
+[11.882753] (-) TimerEvent: {}
+[11.986490] (-) TimerEvent: {}
+[12.088586] (-) TimerEvent: {}
+[12.190832] (-) TimerEvent: {}
+[12.291304] (-) TimerEvent: {}
+[12.391755] (-) TimerEvent: {}
+[12.493250] (-) TimerEvent: {}
+[12.593860] (-) TimerEvent: {}
+[12.696246] (-) TimerEvent: {}
+[12.796711] (-) TimerEvent: {}
+[12.899392] (-) TimerEvent: {}
+[13.000030] (-) TimerEvent: {}
+[13.104081] (-) TimerEvent: {}
+[13.207369] (-) TimerEvent: {}
+[13.307838] (-) TimerEvent: {}
+[13.413579] (-) TimerEvent: {}
+[13.514239] (-) TimerEvent: {}
+[13.618431] (-) TimerEvent: {}
+[13.718914] (-) TimerEvent: {}
+[13.821705] (-) TimerEvent: {}
+[13.923297] (-) TimerEvent: {}
+[14.027294] (-) TimerEvent: {}
+[14.127842] (-) TimerEvent: {}
+[14.228677] (-) TimerEvent: {}
+[14.330790] (-) TimerEvent: {}
+[14.434516] (-) TimerEvent: {}
+[14.535108] (-) TimerEvent: {}
+[14.640165] (-) TimerEvent: {}
+[14.740729] (-) TimerEvent: {}
+[14.843042] (-) TimerEvent: {}
+[14.949316] (-) TimerEvent: {}
+[15.052355] (-) TimerEvent: {}
+[15.153195] (-) TimerEvent: {}
+[15.257727] (-) TimerEvent: {}
+[15.358238] (-) TimerEvent: {}
+[15.460124] (-) TimerEvent: {}
+[15.565246] (-) TimerEvent: {}
+[15.665752] (-) TimerEvent: {}
+[15.766253] (-) TimerEvent: {}
+[15.869521] (-) TimerEvent: {}
+[15.973793] (-) TimerEvent: {}
+[16.076593] (-) TimerEvent: {}
+[16.177882] (-) TimerEvent: {}
+[16.278604] (-) TimerEvent: {}
+[16.382463] (-) TimerEvent: {}
+[16.483000] (-) TimerEvent: {}
+[16.587956] (-) TimerEvent: {}
+[16.688592] (-) TimerEvent: {}
+[16.790483] (-) TimerEvent: {}
+[16.892240] (-) TimerEvent: {}
+[16.993058] (-) TimerEvent: {}
+[17.093867] (-) TimerEvent: {}
+[17.194457] (-) TimerEvent: {}
+[17.297381] (-) TimerEvent: {}
+[17.397848] (-) TimerEvent: {}
+[17.503237] (-) TimerEvent: {}
+[17.603713] (-) TimerEvent: {}
+[17.705010] (-) TimerEvent: {}
+[17.811042] (-) TimerEvent: {}
+[17.915644] (-) TimerEvent: {}
+[18.020834] (-) TimerEvent: {}
+[18.121240] (-) TimerEvent: {}
+[18.222044] (-) TimerEvent: {}
+[18.322712] (-) TimerEvent: {}
+[18.424590] (-) TimerEvent: {}
+[18.526782] (-) TimerEvent: {}
+[18.633857] (-) TimerEvent: {}
+[18.734523] (-) TimerEvent: {}
+[18.835004] (-) TimerEvent: {}
+[18.939506] (-) TimerEvent: {}
+[19.040004] (-) TimerEvent: {}
+[19.141815] (-) TimerEvent: {}
+[19.246027] (-) TimerEvent: {}
+[19.346947] (-) TimerEvent: {}
+[19.453231] (-) TimerEvent: {}
+[19.553619] (-) TimerEvent: {}
+[19.654022] (-) TimerEvent: {}
+[19.754422] (-) TimerEvent: {}
+[19.854792] (-) TimerEvent: {}
+[19.955692] (-) TimerEvent: {}
+[20.071324] (web_video_server) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/jpeg_streamers.cpp.o\x1b[0m\n'}
+[20.110890] (-) TimerEvent: {}
+[20.211338] (-) TimerEvent: {}
+[20.311888] (-) TimerEvent: {}
+[20.413290] (-) TimerEvent: {}
+[20.513951] (-) TimerEvent: {}
+[20.616174] (-) TimerEvent: {}
+[20.722659] (-) TimerEvent: {}
+[20.823238] (-) TimerEvent: {}
+[20.924248] (-) TimerEvent: {}
+[21.027442] (-) TimerEvent: {}
+[21.127878] (-) TimerEvent: {}
+[21.228461] (-) TimerEvent: {}
+[21.330445] (-) TimerEvent: {}
+[21.430889] (-) TimerEvent: {}
+[21.535450] (-) TimerEvent: {}
+[21.637730] (-) TimerEvent: {}
+[21.740165] (-) TimerEvent: {}
+[21.843547] (-) TimerEvent: {}
+[21.945360] (-) TimerEvent: {}
+[22.047582] (-) TimerEvent: {}
+[22.150416] (-) TimerEvent: {}
+[22.250978] (-) TimerEvent: {}
+[22.354389] (-) TimerEvent: {}
+[22.457649] (-) TimerEvent: {}
+[22.568344] (-) TimerEvent: {}
+[22.668915] (-) TimerEvent: {}
+[22.770761] (-) TimerEvent: {}
+[22.864473] (web_video_server) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/utils.cpp.o\x1b[0m\n'}
+[22.865562] (web_video_server) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/png_streamers.cpp.o\x1b[0m\n'}
+[22.873353] (-) TimerEvent: {}
+[22.973937] (-) TimerEvent: {}
+[23.074373] (-) TimerEvent: {}
+[23.174741] (-) TimerEvent: {}
+[23.278237] (-) TimerEvent: {}
+[23.378601] (-) TimerEvent: {}
+[23.478988] (-) TimerEvent: {}
+[23.580836] (-) TimerEvent: {}
+[23.681348] (-) TimerEvent: {}
+[23.781932] (-) TimerEvent: {}
+[23.882389] (-) TimerEvent: {}
+[23.982935] (-) TimerEvent: {}
+[24.084294] (-) TimerEvent: {}
+[24.186959] (-) TimerEvent: {}
+[24.287524] (-) TimerEvent: {}
+[24.388092] (-) TimerEvent: {}
+[24.489737] (-) TimerEvent: {}
+[24.590136] (-) TimerEvent: {}
+[24.690783] (-) TimerEvent: {}
+[24.791322] (-) TimerEvent: {}
+[24.892135] (-) TimerEvent: {}
+[24.994279] (-) TimerEvent: {}
+[25.098250] (-) TimerEvent: {}
+[25.198728] (-) TimerEvent: {}
+[25.299250] (-) TimerEvent: {}
+[25.399820] (-) TimerEvent: {}
+[25.500342] (-) TimerEvent: {}
+[25.600838] (-) TimerEvent: {}
+[25.701231] (-) TimerEvent: {}
+[25.801604] (-) TimerEvent: {}
+[25.902079] (-) TimerEvent: {}
+[26.002803] (-) TimerEvent: {}
+[26.103361] (-) TimerEvent: {}
+[26.203762] (-) TimerEvent: {}
+[26.304213] (-) TimerEvent: {}
+[26.404656] (-) TimerEvent: {}
+[26.505372] (-) TimerEvent: {}
+[26.605943] (-) TimerEvent: {}
+[26.706385] (-) TimerEvent: {}
+[26.806739] (-) TimerEvent: {}
+[26.907109] (-) TimerEvent: {}
+[27.007472] (-) TimerEvent: {}
+[27.107911] (-) TimerEvent: {}
+[27.208240] (-) TimerEvent: {}
+[27.309242] (-) TimerEvent: {}
+[27.409801] (-) TimerEvent: {}
+[27.510273] (-) TimerEvent: {}
+[27.610742] (-) TimerEvent: {}
+[27.711232] (-) TimerEvent: {}
+[27.811751] (-) TimerEvent: {}
+[27.912706] (-) TimerEvent: {}
+[28.014363] (-) TimerEvent: {}
+[28.115220] (-) TimerEvent: {}
+[28.215640] (-) TimerEvent: {}
+[28.316729] (-) TimerEvent: {}
+[28.418607] (-) TimerEvent: {}
+[28.519070] (-) TimerEvent: {}
+[28.619760] (-) TimerEvent: {}
+[28.720190] (-) TimerEvent: {}
+[28.820594] (-) TimerEvent: {}
+[28.921013] (-) TimerEvent: {}
+[29.021392] (-) TimerEvent: {}
+[29.121758] (-) TimerEvent: {}
+[29.222104] (-) TimerEvent: {}
+[29.322532] (-) TimerEvent: {}
+[29.422907] (-) TimerEvent: {}
+[29.523262] (-) TimerEvent: {}
+[29.623575] (-) TimerEvent: {}
+[29.723844] (-) TimerEvent: {}
+[29.824217] (-) TimerEvent: {}
+[29.924500] (-) TimerEvent: {}
+[30.024858] (-) TimerEvent: {}
+[30.125250] (-) TimerEvent: {}
+[30.233131] (-) TimerEvent: {}
+[30.333790] (-) TimerEvent: {}
+[30.434248] (-) TimerEvent: {}
+[30.534682] (-) TimerEvent: {}
+[30.635230] (-) TimerEvent: {}
+[30.735804] (-) TimerEvent: {}
+[30.836329] (-) TimerEvent: {}
+[30.936669] (-) TimerEvent: {}
+[31.037037] (-) TimerEvent: {}
+[31.137361] (-) TimerEvent: {}
+[31.237707] (-) TimerEvent: {}
+[31.338046] (-) TimerEvent: {}
+[31.438423] (-) TimerEvent: {}
+[31.538774] (-) TimerEvent: {}
+[31.639129] (-) TimerEvent: {}
+[31.739442] (-) TimerEvent: {}
+[31.839785] (-) TimerEvent: {}
+[31.940265] (-) TimerEvent: {}
+[32.040538] (-) TimerEvent: {}
+[32.140841] (-) TimerEvent: {}
+[32.241100] (-) TimerEvent: {}
+[32.341376] (-) TimerEvent: {}
+[32.441700] (-) TimerEvent: {}
+[32.541971] (-) TimerEvent: {}
+[32.642351] (-) TimerEvent: {}
+[32.742658] (-) TimerEvent: {}
+[32.842906] (-) TimerEvent: {}
+[32.943211] (-) TimerEvent: {}
+[33.043544] (-) TimerEvent: {}
+[33.143857] (-) TimerEvent: {}
+[33.244209] (-) TimerEvent: {}
+[33.344498] (-) TimerEvent: {}
+[33.444741] (-) TimerEvent: {}
+[33.544990] (-) TimerEvent: {}
+[33.645203] (-) TimerEvent: {}
+[33.745459] (-) TimerEvent: {}
+[33.845759] (-) TimerEvent: {}
+[33.946077] (-) TimerEvent: {}
+[34.046498] (-) TimerEvent: {}
+[34.146876] (-) TimerEvent: {}
+[34.247143] (-) TimerEvent: {}
+[34.347508] (-) TimerEvent: {}
+[34.447808] (-) TimerEvent: {}
+[34.548136] (-) TimerEvent: {}
+[34.648428] (-) TimerEvent: {}
+[34.748796] (-) TimerEvent: {}
+[34.849112] (-) TimerEvent: {}
+[34.949484] (-) TimerEvent: {}
+[35.049758] (-) TimerEvent: {}
+[35.150072] (-) TimerEvent: {}
+[35.250388] (-) TimerEvent: {}
+[35.350713] (-) TimerEvent: {}
+[35.451210] (-) TimerEvent: {}
+[35.551589] (-) TimerEvent: {}
+[35.651855] (-) TimerEvent: {}
+[35.752135] (-) TimerEvent: {}
+[35.852399] (-) TimerEvent: {}
+[35.952694] (-) TimerEvent: {}
+[36.052963] (-) TimerEvent: {}
+[36.153210] (-) TimerEvent: {}
+[36.253512] (-) TimerEvent: {}
+[36.352123] (web_video_server) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX shared library libweb_video_server.so\x1b[0m\n'}
+[36.353583] (-) TimerEvent: {}
+[36.453789] (-) TimerEvent: {}
+[36.554089] (-) TimerEvent: {}
+[36.654365] (-) TimerEvent: {}
+[36.754670] (-) TimerEvent: {}
+[36.855179] (-) TimerEvent: {}
+[36.955619] (-) TimerEvent: {}
+[37.056084] (-) TimerEvent: {}
+[37.156668] (-) TimerEvent: {}
+[37.257251] (-) TimerEvent: {}
+[37.357727] (-) TimerEvent: {}
+[37.386000] (web_video_server) StdoutLine: {'line': b'[ 85%] Built target web_video_server\n'}
+[37.432614] (web_video_server) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server_node.dir/src/web_video_server_node.cpp.o\x1b[0m\n'}
+[37.457951] (-) TimerEvent: {}
+[37.558370] (-) TimerEvent: {}
+[37.658827] (-) TimerEvent: {}
+[37.759219] (-) TimerEvent: {}
+[37.859551] (-) TimerEvent: {}
+[37.959970] (-) TimerEvent: {}
+[38.060258] (-) TimerEvent: {}
+[38.160580] (-) TimerEvent: {}
+[38.260881] (-) TimerEvent: {}
+[38.361214] (-) TimerEvent: {}
+[38.461516] (-) TimerEvent: {}
+[38.561865] (-) TimerEvent: {}
+[38.662173] (-) TimerEvent: {}
+[38.762474] (-) TimerEvent: {}
+[38.862800] (-) TimerEvent: {}
+[38.963107] (-) TimerEvent: {}
+[39.063485] (-) TimerEvent: {}
+[39.163770] (-) TimerEvent: {}
+[39.264070] (-) TimerEvent: {}
+[39.364393] (-) TimerEvent: {}
+[39.464692] (-) TimerEvent: {}
+[39.564999] (-) TimerEvent: {}
+[39.665359] (-) TimerEvent: {}
+[39.765914] (-) TimerEvent: {}
+[39.866334] (-) TimerEvent: {}
+[39.966682] (-) TimerEvent: {}
+[40.067051] (-) TimerEvent: {}
+[40.167425] (-) TimerEvent: {}
+[40.268034] (-) TimerEvent: {}
+[40.368434] (-) TimerEvent: {}
+[40.468878] (-) TimerEvent: {}
+[40.570289] (-) TimerEvent: {}
+[40.670701] (-) TimerEvent: {}
+[40.771109] (-) TimerEvent: {}
+[40.871383] (-) TimerEvent: {}
+[40.971781] (-) TimerEvent: {}
+[41.072028] (-) TimerEvent: {}
+[41.172345] (-) TimerEvent: {}
+[41.272674] (-) TimerEvent: {}
+[41.373162] (-) TimerEvent: {}
+[41.473457] (-) TimerEvent: {}
+[41.573733] (-) TimerEvent: {}
+[41.674064] (-) TimerEvent: {}
+[41.774439] (-) TimerEvent: {}
+[41.874778] (-) TimerEvent: {}
+[41.975229] (-) TimerEvent: {}
+[42.075579] (-) TimerEvent: {}
+[42.175843] (-) TimerEvent: {}
+[42.276095] (-) TimerEvent: {}
+[42.376416] (-) TimerEvent: {}
+[42.476745] (-) TimerEvent: {}
+[42.577024] (-) TimerEvent: {}
+[42.677318] (-) TimerEvent: {}
+[42.777568] (-) TimerEvent: {}
+[42.877811] (-) TimerEvent: {}
+[42.978102] (-) TimerEvent: {}
+[43.078482] (-) TimerEvent: {}
+[43.178805] (-) TimerEvent: {}
+[43.279106] (-) TimerEvent: {}
+[43.379409] (-) TimerEvent: {}
+[43.479666] (-) TimerEvent: {}
+[43.579977] (-) TimerEvent: {}
+[43.680300] (-) TimerEvent: {}
+[43.780568] (-) TimerEvent: {}
+[43.880981] (-) TimerEvent: {}
+[43.981427] (-) TimerEvent: {}
+[44.081770] (-) TimerEvent: {}
+[44.182179] (-) TimerEvent: {}
+[44.282525] (-) TimerEvent: {}
+[44.382799] (-) TimerEvent: {}
+[44.483147] (-) TimerEvent: {}
+[44.583488] (-) TimerEvent: {}
+[44.683834] (-) TimerEvent: {}
+[44.784214] (-) TimerEvent: {}
+[44.884550] (-) TimerEvent: {}
+[44.984947] (-) TimerEvent: {}
+[45.085415] (-) TimerEvent: {}
+[45.185916] (-) TimerEvent: {}
+[45.286319] (-) TimerEvent: {}
+[45.387792] (-) TimerEvent: {}
+[45.488192] (-) TimerEvent: {}
+[45.588605] (-) TimerEvent: {}
+[45.688973] (-) TimerEvent: {}
+[45.789416] (-) TimerEvent: {}
+[45.889815] (-) TimerEvent: {}
+[45.990123] (-) TimerEvent: {}
+[46.090448] (-) TimerEvent: {}
+[46.190725] (-) TimerEvent: {}
+[46.291010] (-) TimerEvent: {}
+[46.391445] (-) TimerEvent: {}
+[46.491782] (-) TimerEvent: {}
+[46.592108] (-) TimerEvent: {}
+[46.692459] (-) TimerEvent: {}
+[46.792756] (-) TimerEvent: {}
+[46.893118] (-) TimerEvent: {}
+[46.993417] (-) TimerEvent: {}
+[47.093797] (-) TimerEvent: {}
+[47.194174] (-) TimerEvent: {}
+[47.294577] (-) TimerEvent: {}
+[47.297899] (web_video_server) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable web_video_server\x1b[0m\n'}
+[47.394782] (-) TimerEvent: {}
+[47.495509] (-) TimerEvent: {}
+[47.596279] (-) TimerEvent: {}
+[47.697017] (-) TimerEvent: {}
+[47.797756] (-) TimerEvent: {}
+[47.898403] (-) TimerEvent: {}
+[47.998823] (-) TimerEvent: {}
+[48.099226] (-) TimerEvent: {}
+[48.199583] (-) TimerEvent: {}
+[48.300043] (-) TimerEvent: {}
+[48.400441] (-) TimerEvent: {}
+[48.500748] (-) TimerEvent: {}
+[48.601098] (-) TimerEvent: {}
+[48.665302] (web_video_server) StdoutLine: {'line': b'[100%] Built target web_video_server_node\n'}
+[48.703812] (-) TimerEvent: {}
+[48.728916] (web_video_server) CommandEnded: {'returncode': 0}
+[48.797683] (web_video_server) JobProgress: {'identifier': 'web_video_server', 'progress': 'install'}
+[48.798419] (web_video_server) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/DATA/DATN/ros_ws/build/web_video_server'], 'cwd': '/home/DATA/DATN/ros_ws/build/web_video_server', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'adonis', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/adonis', 'OLDPWD': '/home/DATA/DATN/ros_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3239', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'adonis', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'adonis', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/adonis-Nitro-AN515-55:@/tmp/.ICE-unix/3207,unix/adonis-Nitro-AN515-55:/tmp/.ICE-unix/3207', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c1d7b542_c385_4288_bea0_c28bf49be8bf', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.118', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/DATA/DATN/ros_ws/build/web_video_server', 'QT_QPA_PLATFORM': 'xcb', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[48.803852] (-) TimerEvent: {}
+[48.810408] (web_video_server) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[48.811458] (web_video_server) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[48.816089] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/include/web_video_server/web_video_server/h264_streamer.hpp\n'}
+[48.825440] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/include/web_video_server/web_video_server/image_streamer.hpp\n'}
+[48.834652] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/include/web_video_server/web_video_server/jpeg_streamers.hpp\n'}
+[48.844243] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/include/web_video_server/web_video_server/libav_streamer.hpp\n'}
+[48.854900] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/include/web_video_server/web_video_server/multipart_stream.hpp\n'}
+[48.864832] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/include/web_video_server/web_video_server/png_streamers.hpp\n'}
+[48.874794] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/include/web_video_server/web_video_server/ros_compressed_streamer.hpp\n'}
+[48.886553] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/include/web_video_server/web_video_server/utils.hpp\n'}
+[48.897920] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/include/web_video_server/web_video_server/vp8_streamer.hpp\n'}
+[48.903970] (-) TimerEvent: {}
+[48.907703] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/include/web_video_server/web_video_server/vp9_streamer.hpp\n'}
+[48.917150] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/include/web_video_server/web_video_server/web_video_server.hpp\n'}
+[48.928998] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/environment/library_path.sh\n'}
+[48.938721] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/environment/library_path.dsv\n'}
+[48.948945] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/lib/web_video_server/web_video_server\n'}
+[48.959440] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/share/ament_index/resource_index/package_run_dependencies/web_video_server\n'}
+[48.969930] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/share/ament_index/resource_index/parent_prefix_path/web_video_server\n'}
+[48.981768] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/environment/ament_prefix_path.sh\n'}
+[48.993393] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/environment/ament_prefix_path.dsv\n'}
+[49.004078] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/environment/path.sh\n'}
+[49.004280] (-) TimerEvent: {}
+[49.014993] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/environment/path.dsv\n'}
+[49.025966] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/local_setup.bash\n'}
+[49.037010] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/local_setup.sh\n'}
+[49.048199] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/local_setup.zsh\n'}
+[49.059487] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/local_setup.dsv\n'}
+[49.069814] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/package.dsv\n'}
+[49.080195] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/share/ament_index/resource_index/packages/web_video_server\n'}
+[49.092505] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/share/ament_index/resource_index/rclcpp_components/web_video_server\n'}
+[49.104503] (-) TimerEvent: {}
+[49.107795] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[49.121237] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/cmake/web_video_serverConfig.cmake\n'}
+[49.135024] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/cmake/web_video_serverConfig-version.cmake\n'}
+[49.150633] (web_video_server) StdoutLine: {'line': b'-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/package.xml\n'}
+[49.164497] (web_video_server) StdoutLine: {'line': b'-- Installing: /home/DATA/DATN/ros_ws/install/web_video_server/lib/libweb_video_server.so\n'}
+[49.175058] (web_video_server) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/DATA/DATN/ros_ws/install/web_video_server/lib/libweb_video_server.so" to ""\n'}
+[49.175670] (web_video_server) StdoutLine: {'line': b'-- Installing: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/cmake/export_web_video_serverExport.cmake\n'}
+[49.175932] (web_video_server) StdoutLine: {'line': b'-- Installing: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/cmake/export_web_video_serverExport-noconfig.cmake\n'}
+[49.183711] (web_video_server) CommandEnded: {'returncode': 0}
+[49.204933] (-) TimerEvent: {}
+[49.314040] (-) TimerEvent: {}
+[49.325753] (web_video_server) JobEnded: {'identifier': 'web_video_server', 'rc': 0}
+[49.336430] (-) EventReactorShutdown: {}

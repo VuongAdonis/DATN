@@ -1,5 +1,5 @@
 controller_manager:
-  ros_parameters:
+  ros__parameters:
     update_rate: 30
     use_sim_time: true
 
@@ -11,7 +11,7 @@ controller_manager:
 
 # set the parameter for the joint state for the diffdrive controller
 diff_cont:
-  ros_parameters:
+  ros__parameters:
     publish_rate: 50.0
 
     base_frame_id: base_link
@@ -22,6 +22,7 @@ diff_cont:
     wheel_radius: 0.05
 
     use_stamped_vel: false
+    # use_stamped_vel: true
 
     # open_loop: false
 

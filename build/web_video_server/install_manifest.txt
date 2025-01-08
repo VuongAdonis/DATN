@@ -1,0 +1,3 @@
+/home/DATA/DATN/ros_ws/install/web_video_server/lib/libweb_video_server.so
+/home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/cmake/export_web_video_serverExport.cmake
+/home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/cmake/export_web_video_serverExport-noconfig.cmake

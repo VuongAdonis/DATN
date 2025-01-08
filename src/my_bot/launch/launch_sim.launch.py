@@ -80,11 +80,18 @@ def generate_launch_description():
         output='screen',
     )
 
+    joystick = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    get_package_share_directory(package_name),'launch','joystick.launch.py'
+                )])
+    )
+
     # Launch them all!
     return LaunchDescription([
         rsp,
         gazeboLaunch,
         spawn_entity,
         start_gazebo_ros_bridge_cmd,
-        start_gazebo_ros_image_bridge_cmd
+        start_gazebo_ros_image_bridge_cmd,
+        joystick
     ])
