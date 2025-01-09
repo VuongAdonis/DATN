@@ -1,11 +1,12 @@
 twist_mux:
   ros__parameters:
+    use_stamped: true  # hoặc false nếu bạn không muốn sử dụng TwistStamped
     topics:
       navigation:
-        topic   : cmd_vel
+        topic   : "cmd_vel"
         timeout : 0.5
         priority: 10
       joystick:
-        topic   : cmd_vel_joy
+        topic   : "cmd_vel"
         timeout : 0.5
         priority: 100
