@@ -1,0 +1,18 @@
+[  7%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/web_video_server.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/image_streamer.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/libav_streamer.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/vp8_streamer.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/h264_streamer.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/vp9_streamer.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/ros_compressed_streamer.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/multipart_stream.cpp.o[0m
+gmake[2]: *** [CMakeFiles/web_video_server.dir/build.make:76: CMakeFiles/web_video_server.dir/src/web_video_server.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/web_video_server.dir/build.make:174: CMakeFiles/web_video_server.dir/src/ros_compressed_streamer.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/web_video_server.dir/build.make:160: CMakeFiles/web_video_server.dir/src/multipart_stream.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/web_video_server.dir/build.make:104: CMakeFiles/web_video_server.dir/src/libav_streamer.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/web_video_server.dir/build.make:118: CMakeFiles/web_video_server.dir/src/vp8_streamer.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/web_video_server.dir/build.make:132: CMakeFiles/web_video_server.dir/src/h264_streamer.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/web_video_server.dir/build.make:90: CMakeFiles/web_video_server.dir/src/image_streamer.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/web_video_server.dir/build.make:146: CMakeFiles/web_video_server.dir/src/vp9_streamer.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/web_video_server.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

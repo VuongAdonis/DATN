@@ -1,0 +1,64 @@
+-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found async_web_server_cpp: 2.0.0 (/opt/ros/jazzy/share/async_web_server_cpp/cmake)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found suitable version "1.83.0", minimum required is "1.83.0") found components: filesystem regex thread 
+-- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found image_transport: 5.1.4 (/opt/ros/jazzy/share/image_transport/cmake)
+-- Found rclcpp_components: 28.1.5 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system 
+-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Configuring done (1.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/DATA/DATN/ros_ws/build/web_video_server
+[ 85%] Built target web_video_server
+[100%] Built target web_video_server_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/include/web_video_server/web_video_server/h264_streamer.hpp
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/include/web_video_server/web_video_server/image_streamer.hpp
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/include/web_video_server/web_video_server/jpeg_streamers.hpp
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/include/web_video_server/web_video_server/libav_streamer.hpp
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/include/web_video_server/web_video_server/multipart_stream.hpp
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/include/web_video_server/web_video_server/png_streamers.hpp
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/include/web_video_server/web_video_server/ros_compressed_streamer.hpp
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/include/web_video_server/web_video_server/utils.hpp
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/include/web_video_server/web_video_server/vp8_streamer.hpp
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/include/web_video_server/web_video_server/vp9_streamer.hpp
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/include/web_video_server/web_video_server/web_video_server.hpp
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/environment/library_path.sh
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/environment/library_path.dsv
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/lib/web_video_server/web_video_server
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/share/ament_index/resource_index/package_run_dependencies/web_video_server
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/share/ament_index/resource_index/parent_prefix_path/web_video_server
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/environment/path.sh
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/environment/path.dsv
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/local_setup.bash
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/local_setup.sh
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/local_setup.zsh
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/local_setup.dsv
+-- Symlinking: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/package.dsv
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/share/ament_index/resource_index/packages/web_video_server
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/share/ament_index/resource_index/rclcpp_components/web_video_server
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/cmake/web_video_serverConfig.cmake
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/cmake/web_video_serverConfig-version.cmake
+-- Up-to-date symlink: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/package.xml
+-- Up-to-date: /home/DATA/DATN/ros_ws/install/web_video_server/lib/libweb_video_server.so
+-- Up-to-date: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/cmake/export_web_video_serverExport.cmake
+-- Up-to-date: /home/DATA/DATN/ros_ws/install/web_video_server/share/web_video_server/cmake/export_web_video_serverExport-noconfig.cmake

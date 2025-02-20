@@ -1,0 +1,20 @@
+[0.491s] Invoking command in '/home/DATA/DATN/ros_ws/build/web_video_server': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/DATA/DATN/ros_ws/install/my_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/DATA/DATN/ros_ws/build/web_video_server -- -j8 -l8
+[0.935s] [  7%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/web_video_server.cpp.o[0m
+[0.937s] [ 14%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/image_streamer.cpp.o[0m
+[0.938s] [ 21%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/libav_streamer.cpp.o[0m
+[0.942s] [ 28%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/vp8_streamer.cpp.o[0m
+[0.954s] [ 35%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/h264_streamer.cpp.o[0m
+[0.957s] [ 42%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/vp9_streamer.cpp.o[0m
+[1.995s] [ 50%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/ros_compressed_streamer.cpp.o[0m
+[2.003s] [ 57%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/multipart_stream.cpp.o[0m
+[7.596s] gmake[2]: *** [CMakeFiles/web_video_server.dir/build.make:76: CMakeFiles/web_video_server.dir/src/web_video_server.cpp.o] Interrupt
+[7.597s] gmake[2]: *** [CMakeFiles/web_video_server.dir/build.make:174: CMakeFiles/web_video_server.dir/src/ros_compressed_streamer.cpp.o] Interrupt
+[7.602s] gmake[2]: *** [CMakeFiles/web_video_server.dir/build.make:160: CMakeFiles/web_video_server.dir/src/multipart_stream.cpp.o] Interrupt
+[7.603s] gmake[2]: *** [CMakeFiles/web_video_server.dir/build.make:104: CMakeFiles/web_video_server.dir/src/libav_streamer.cpp.o] Interrupt
+[7.603s] gmake[2]: *** [CMakeFiles/web_video_server.dir/build.make:118: CMakeFiles/web_video_server.dir/src/vp8_streamer.cpp.o] Interrupt
+[7.603s] gmake[2]: *** [CMakeFiles/web_video_server.dir/build.make:132: CMakeFiles/web_video_server.dir/src/h264_streamer.cpp.o] Interrupt
+[7.610s] gmake[2]: *** [CMakeFiles/web_video_server.dir/build.make:90: CMakeFiles/web_video_server.dir/src/image_streamer.cpp.o] Interrupt
+[7.610s] gmake[2]: *** [CMakeFiles/web_video_server.dir/build.make:146: CMakeFiles/web_video_server.dir/src/vp9_streamer.cpp.o] Interrupt
+[7.616s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/web_video_server.dir/all] Interrupt
+[7.617s] gmake: *** [Makefile:146: all] Interrupt
+[7.678s] Invoked command in '/home/DATA/DATN/ros_ws/build/web_video_server' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/DATA/DATN/ros_ws/install/my_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/DATA/DATN/ros_ws/build/web_video_server -- -j8 -l8

@@ -1,0 +1,5 @@
+[console_scripts]
+convert = my_package.convertJSON:main
+mapSend = my_package.ocupanGrid:main
+test = my_package.controlRobot:main
+video = my_package.testVideo:main

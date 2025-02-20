@@ -1,0 +1,6 @@
+[0.062s] Invoking command in '/home/DATA/DATN/ros_ws/build/web_video_server': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/DATA/DATN/ros_ws/build/web_video_server -- -j8 -l8
+[0.685s] [  7%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/web_video_server.cpp.o[0m
+[26.514s] gmake[2]: *** [CMakeFiles/web_video_server.dir/build.make:76: CMakeFiles/web_video_server.dir/src/web_video_server.cpp.o] Interrupt
+[26.516s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/web_video_server.dir/all] Interrupt
+[26.516s] gmake: *** [Makefile:146: all] Interrupt
+[26.649s] Invoked command in '/home/DATA/DATN/ros_ws/build/web_video_server' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/DATA/DATN/ros_ws/build/web_video_server -- -j8 -l8
