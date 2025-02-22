@@ -11,21 +11,26 @@ from my_package.gesture_processing import GestureRecognition
 
 fontType = cv2.FONT_HERSHEY_SIMPLEX
 
+
 class ImagePublisher(Node):
     def __init__(self):
         # Khởi tạo node ROS 2
         super().__init__('image_publisher')
 
         # Tạo publisher cho topic /camera/image/compressed
-        self.publisherImage = self.create_publisher(CompressedImage, '/camera/image_raw/compressed', 10)
-        self.publisherBattery = self.create_publisher(String, '/batteryTopic', 10)
+        self.publisherImage = self.create_publisher(
+            CompressedImage, '/camera/image_raw/compressed', 10)
+        self.publisherBattery = self.create_publisher(
+            String, '/batteryTopic', 10)
 
         # Mở camera (hoặc tải hình ảnh từ file)
-        self.cap = cv2.VideoCapture(0)  # Thay đổi 0 thành đường dẫn file nếu cần
+        # Thay đổi 0 thành đường dẫn file nếu cần
+        self.cap = cv2.VideoCapture(0)
         # self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 400)
         # self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 400)
         # Tạo timer để xuất bản tin nhắn liên tục ở tần suất 10 Hz
-        self.timer = self.create_timer(0.1, self.imagePublish)  # 0.1 giây tương đương 10 Hz
+        # 0.1 giây tương đương 10 Hz
+        self.timer = self.create_timer(0.1, self.imagePublish)
 
         self.subscriptionFeature = self.create_subscription(
             String,  # Replace with the actual message type you want to subscribe to
@@ -33,10 +38,16 @@ class ImagePublisher(Node):
             self.feature_callback,
             10
         )
+        # self.subscriptionControl = self.create_subscription(
+        #     Twist,  # Replace with the actual message type you want to subscribe to
+        #     '/cmd_vel',
+        #     self.control_callback,
+        #     10
+        # )
         self.subscriptionControl = self.create_subscription(
-            Twist,  # Replace with the actual message type you want to subscribe to
-            '/cmd_vel',
-            self.control_callback,
+            String,  # Replace with the actual message type you want to subscribe to
+            '/voiceTopic',
+            self.voice_callback,
             10
         )
         self.subscriptionControl = self.create_subscription(
@@ -66,7 +77,8 @@ class ImagePublisher(Node):
         elif self.feature == "faceOff":
             self.face_processing.remove_variable()
         elif self.feature == 'color':
-            frame = self.color_processing.color_function(frame, self.color, self.tracking)
+            frame = self.color_processing.color_function(
+                frame, self.color, self.tracking)
         elif self.feature == 'gesture':
             frame = self.gesture_processing.gesture_function(frame)
 
@@ -76,7 +88,8 @@ class ImagePublisher(Node):
 
         # Tạo đối tượng tin nhắn CompressedImage
         compressed_image_msg = CompressedImage()
-        compressed_image_msg.header.stamp = self.get_clock().now().to_msg()  # Lấy thời gian hiện tại
+        compressed_image_msg.header.stamp = self.get_clock(
+        ).now().to_msg()  # Lấy thời gian hiện tại
         compressed_image_msg.format = "jpeg"
         compressed_image_msg.data = jpeg_image
 
@@ -88,9 +101,9 @@ class ImagePublisher(Node):
         # Put the message to the feature to process the feature (face/color/gesture)
         self.feature = msg.data
 
-    def control_callback(self, msg):
+    def voice_callback(self, msg):
         # On/Off the voice
-        if msg.data ==  '':
+        if msg.data == '':
             print("Voice is on...")
         else:
             print("Voice is off...")
