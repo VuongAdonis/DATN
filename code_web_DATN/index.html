@@ -84,11 +84,29 @@
                 width: calc(100% - 40px); /* Chiều rộng của thanh trượt */
                 margin-top: 10px; /* Khoảng cách giữa label và slider */
             }
+            
+            .my-background {
+                background-image: url('image/BachKhoa_logo.png');
+                background-repeat: no-repeat;
+                background-size: contain; /* Hoặc cover tuỳ mục đích */
+                background-position: center;
+                width: 150%;
+                height: 150%;
+
+                 /* Thêm màu nền xanh dương nhạt với alpha */
+                background-color: rgba(173, 216, 230, 0.95); /* lightblue với độ mờ 50% */
+                /* Kết hợp màu nền và ảnh nền */
+                background-blend-mode: lighten; /* hoặc overlay, screen, multiply tùy hiệu ứng muốn */
+            }
+            body {
+                background-color: rgba(173, 216, 230, 0.99); /* Màu xanh dương chuẩn full */
+                z-index: -1;
+            }
         </style>
     </head>
 
     <body>
-        <div id="app" class="container">
+        <div id="app" class="container my-background">
             <div class="jumbotron">
                 <h1>Welcome to the Control Panel</h1>
             </div>

@@ -31,7 +31,26 @@
                 <hr>
                 <h5>Commands</h5>
                 <!-- Joystick -->
-                <div style="display: flex; justify-content: space-around; margin-top: 20px;">
+                <!-- <button @click="toggleNotifyGamepadControlTopic" :disabled="loading || !connected" class="btn btn-success" v-if="gamepadControlStatus">GamepadControl: {{ gamepadControlStatus ? 'On' : 'Off' }}</button>
+                <button @click="toggleNotifyGamepadControlTopic" :disabled="loading || !connected" class="btn btn-danger" v-if="!gamepadControlStatus">GamepadControl: {{ gamepadControlStatus ? 'On' : 'Off' }}</button> -->
+
+                <button @click="toggleNotifyGamepadControlTopic" 
+                :disabled="loading || !connected" class="btn btn-success"
+                class="btn btn-success" 
+                v-if="gamepadControlStatus"
+                style="font-size: 1.2rem; padding: 12px 24px; min-width: 140px;">
+                GamepadControl: {{ gamepadControlStatus ? 'On' : 'Off' }}
+                </button>
+
+                <button @click="toggleNotifyGamepadControlTopic" 
+                :disabled="loading || !connected"       
+                class="btn btn-danger" 
+                v-if="!gamepadControlStatus"
+                style="font-size: 1.2rem; padding: 12px 24px; min-width: 140px;">
+                GamepadControl: {{ gamepadControlStatus ? 'On' : 'Off' }}
+                </button>
+
+                <div style="display: flex; justify-content: space-around; margin-top: 20px;" v-if="!gamepadControlStatus">
                     <div id="joystick-normal">
                         <div class="handle"></div>
                     </div>
@@ -42,29 +61,37 @@
                 </div>
 
                 <!-- New buttons vertically aligned -->
-                <div class="mt-4">
+                <div class="mt-4" >
                     <!-- Face Button Group -->
                     <div class="mb-2">
                         <button @click="activate('face')" 
-                                :class="{'btn-success': activeFeature === 'face', 'btn-secondary': activeFeature !== 'face'}" 
-                                class="btn w-100 mt-2">Face</button>
+                        :class="{'btn-success': activeFeature === 'face', 'btn-secondary': activeFeature !== 'face'}" 
+                        class="btn w-100 mt-2"
+                        :disabled="loading || !connected">
+                                Face
+                        </button>
                 
                         <div v-if="showFaceOptions" class="ml-2">
-                            <button @click="saved" 
-                                    :class="{'btn-success': activeFeature === 'saved', 'btn-outline-primary': activeFeature !== 'saved'}" 
-                                    class="btn w-100 mt-2">Saved</button>
+                        <button @click="saved" 
+                        :class="{'btn-success': activeFeature === 'saved', 'btn-outline-primary': activeFeature !== 'saved'}" 
+                        class="btn w-100 mt-2">
+                        Saved
+                        </button>
                 
-                            <button @click="add" 
-                                    :class="{'btn-success': activeFeature === 'add', 'btn-outline-primary': activeFeature !== 'add'}" 
-                                    class="btn w-100 mt-2">Add</button>
+                        <button @click="add" 
+                            :class="{'btn-success': activeFeature === 'add', 'btn-outline-primary': activeFeature !== 'add'}" 
+                            class="btn w-100 mt-2">Add</button>
                         </div>
                     </div>
                 
                     <!-- Object Button Group -->
                     <div class="mb-2">
                         <button @click="activate('object')" 
-                                :class="{'btn-success': activeFeature === 'object', 'btn-secondary': activeFeature !== 'color'}" 
-                                class="btn w-100 mt-2">Object</button>
+                        :class="{'btn-success': activeFeature === 'object', 'btn-secondary': activeFeature !== 'color'}" 
+                        class="btn w-100 mt-2"
+                        :disabled="loading || !connected">
+                                Object
+                        </button>
 
                         <div v-if="showColorOptions" class="ml-2">
                             <div class="form-check">
@@ -147,8 +174,11 @@
                     <!-- Gesture Button -->
                     <div>
                         <button @click="activate('gesture')" 
-                                :class="{'btn-success': activeFeature === 'gesture', 'btn-secondary': activeFeature !== 'gesture'}" 
-                                class="btn w-100 mt-2">Gesture</button>
+                        :class="{'btn-success': activeFeature === 'gesture', 'btn-secondary': activeFeature !== 'gesture'}" 
+                        class="btn w-100 mt-2"
+                        :disabled="loading || !connected">
+                                Gesture
+                        </button>
                         
                         <div v-if="showGestureResult" class="mt-2 alert alert-info">Results: {{ gestureResult }}</div>
                     </div>
@@ -158,11 +188,11 @@
             <!-- Log messages and Camera View -->
             <div class="col-md-5">
                 <h3>Log messages</h3>
-                <div style="border: 1px solid #ccc; padding: 10px; height: 150px; overflow-y: auto; margin-bottom: 20px;">
+                <div style="border: 5px solid #ccc; padding: 10px; height: 150px; overflow-y: auto; margin-bottom: 20px; background-color: #f5e6d3;">
                     <p v-for="log in logs">{{ log }}</p>
                 </div>
                 <h3>Camera View</h3>
-                <div id="camera-view" style="border: 1px solid #ccc; height: 400px; margin-bottom: 20px;"></div>
+                <div id="camera-view" style="border: 5px solid #ccc; height: 400px; margin-bottom: 20px; background-color: #f5e6d3;"></div>
             </div>
         </div>
     </div>

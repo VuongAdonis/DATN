@@ -17,6 +17,7 @@ const app = createApp({
             featureTopic: null,
             batteryTopic: null,
             imageTopic: null,
+            notifyGamepadControlTopic: null,
 
             voiceActive: false,
             faceAtive: false,
@@ -61,6 +62,9 @@ const app = createApp({
             HighHue: 95,
             HighSaturation: 255,
             HighValue: 255,
+
+            gamepadControl: 0,
+            gamepadControlStatus: 0,
         };
     },
     methods: {
@@ -148,8 +152,12 @@ const app = createApp({
                 messageType: 'std_msgs/String'
             });
 
-            // gestureResult
-
+            this.notifyGamepadControlTopic = new ROSLIB.Topic({
+                ros: this.ros,
+                name: 'notifyGamepadControl', // Tên topic để thông báo cho robot biết chuyển qua control by gamnepad
+                messageType: 'std_msgs/String'
+            });
+            offNotifyGamepadControlTopic();
         },
 
         setJoystick() {
@@ -640,6 +648,31 @@ const app = createApp({
             // }
 
             console.log(`${sliderName} has been updated to: ${this[sliderName]}`);
+        },
+
+        onNotifyGamepadControlTopic() {
+            const notifyGamepadControlMsg = {
+                data: "on"  // Notify for robot to control by gamepad
+            };
+            this.notifyGamepadControlTopic.publish(notifyGamepadControlMsg)
+        },
+
+        offNotifyGamepadControlTopic() {
+            const notifyGamepadControlMsg = {
+                data: "off"  // Notify for robot to control by gamepad
+            };
+            this.notifyGamepadControlTopic.publish(notifyGamepadControlMsg)
+        },
+
+        toggleNotifyGamepadControlTopic() {
+            if(this.gamepadControlStatus == 0) {
+                this.gamepadControlStatus = 1;
+                this.onNotifyGamepadControlTopic();
+            }
+            else {
+                this.gamepadControlStatus = 0;
+                this.offNotifyGamepadControlTopic();
+            }
         }
 
     }

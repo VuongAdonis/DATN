@@ -51,6 +51,7 @@ function navInit() {
             goalTopic: null,
 
             cameraTopic: null,
+            notifyGamepadControlTopic: null,
 
             mapName: "myMap" 
           };
@@ -97,10 +98,26 @@ function navInit() {
             if (this.ros) {
                 this.ros.close();
                 this.connected = false;
+                
                 // window.location.href = 'startPage.html';
             }
         },
         initNav() {
+            this.cameraTopic = new ROSLIB.Topic({
+              ros: this.ros2,
+              name: '/camera/image_raw/compressed', // Tên topic mà camera phát
+              messageType: 'sensor_msgs/msg/CompressedImage'
+            });
+            this.notifyGamepadControlTopic = new ROSLIB.Topic({
+              ros: this.ros2,
+              name: 'notifyGamepadControl', // Tên topic để thông báo cho robot biết chuyển qua control by gamnepad
+              messageType: 'std_msgs/String'
+            });
+            onNotifyGamepadControlTopic();
+
+            /* 
+            Topic connect to VMware to get map, pose for navigation
+            */
             this.mapTopic = new ROSLIB.Topic({
                 ros: this.ros,
                 name: 'map_json', // Tên topic mà camera phát
@@ -116,22 +133,12 @@ function navInit() {
               name: '/goal_pose', // Tên topic mà camera phát
               messageType: 'geometry_msgs/PoseStamped'
             });
-            this.cameraTopic = new ROSLIB.Topic({
-              ros: this.ros2,
-              name: '/camera/image_raw/compressed', // Tên topic mà camera phát
-              messageType: 'sensor_msgs/msg/CompressedImage'
-            });
-            this.cameraTopic = new ROSLIB.Topic({
-              ros: this.ros2,
-              name: '/camera/image_raw/compressed', // Tên topic mà camera phát
-              messageType: 'sensor_msgs/msg/CompressedImage'
-            });
 
             this.saveMapTopic = new ROSLIB.Topic({
               ros: this.ros,
               name: 'saveMap', // Tên topic mà camera phát
               messageType: 'std_msgs/String'
-          });
+            });
             
             this.poseTopic.subscribe((message) => { 
               console.log("Pose.......")
@@ -354,7 +361,21 @@ function navInit() {
             this.saveMapTopic.publish(saveMap)
             console.log("Save map success!!!")
             alert("Save map success!!!")
-          }
+          },
+
+          onNotifyGamepadControlTopic() {
+            const notifyGamepadControlMsg = {
+              data: "on"  // Notify for robot to control by gamepad
+            };
+            this.notifyGamepadControlTopic.publish(notifyGamepadControlMsg)
+          },
+
+          offNotifyGamepadControlTopic() {
+            const notifyGamepadControlMsg = {
+              data: "off"  // Notify for robot to control by gamepad
+            };
+            this.notifyGamepadControlTopic.publish(notifyGamepadControlMsg)
+          },
     }
   })
   

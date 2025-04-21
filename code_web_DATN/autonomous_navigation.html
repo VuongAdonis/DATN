@@ -17,29 +17,32 @@
 </head>
 <body>
     <div id="navApp">
-        <h1>Simple Map Example</h1>
         <button @click="connect2" class="btn btn-success" v-if="!connected">Connect Topic</button>
         <button @click="disconnect" class="btn btn-danger" v-if="connected">Disconnect Topic</button>
   
-        <button @click="eventCanvas" class="btn btn-success">Choose goal pose</button>
+        <button @click="eventCanvas" class="btn btn-success" :disabled="loading || !connected">Choose goal pose</button>
   
       <div style="display: flex;">
-          <div id="map" ref="map">
+          <div id="map" ref="map" style="background-color: #f5e6d3;">
+            <h1>Map navigation</h1>
             <canvas id="myCanvas" width="800" height="600"></canvas>
           </div>
 
-          <div id="camera" style="width: 500px; height: 400px; border: 1px solid black; margin-left: 50px; margin-top: 10px;">
+          <div id="camera" style="width: 500px; height: 400px; border: 1px solid black; margin-left: 50px; margin-top: 10px; background-color: #f5e6d3;">
+            <h1>Camera robot</h1>
             <!-- Chỗ này để hiển thị camera -->
             <div id="camera-view-navigation" style="border: 1px solid #ccc; height: 400px; margin-bottom: 20px;"></div>
-          </div>
-      </div>
 
-      <div class="mt-2 alert alert-info" style="white-space: pre-line;">
-        Goal position: {{ goalPose }}
-      </div> 
-      <!-- <button @click="ChooseMap" class="btn btn-success" style="margin-right: 10px;">Choose map</button> -->
-      <input type="text" v-model="mapName" class="form-control mb-3"/>
-      <button @click="saveMap" class="btn btn-success">Save map</button>
+            <div class="mt-2 alert alert-info" style="white-space: pre-line;">
+              Goal position: {{ goalPose }}
+            </div> 
+            <!-- <button @click="ChooseMap" class="btn btn-success" style="margin-right: 10px;">Choose map</button> -->
+            <input type="text" v-model="mapName" class="form-control mb-3" :disabled="loading || !connected"/>
+            <button @click="saveMap" class="btn btn-success" :disabled="loading || !connected">Save map</button>
+
+          </div>
+
+      </div>
         
     </div>
   
