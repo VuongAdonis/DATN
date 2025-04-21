@@ -23,7 +23,7 @@ setup(
             "convert = my_package.convertJSON:main",
             "video = my_package.testVideo:main",
             "test = my_package.controlRobot:main",
-            "mapSend = my_package.ocupanGrid:main"
+            "mapSend = my_package.sendMap2Web:main"
         ],
     },
 )

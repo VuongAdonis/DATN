@@ -65,6 +65,12 @@ class ImagePublisher(Node):
             self.color_choice_callback,
             10
         )
+        self.subscriptionControl = self.create_subscription(
+            String,  # Replace with the actual message type you want to subscribe to
+            '/notifyGamepadControl',
+            self.notifyGamepadControl_callback,
+            10
+        )
 
         self.feature = ''
         self.face_processing = FaceRecognition()
@@ -218,6 +224,13 @@ class ImagePublisher(Node):
 
         cv2.putText(frame, "Tracking", (50, 50),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 0, 255), 2)
+
+    def voice_callback(self, msg):
+        # On/Off the gamepad Control
+        if msg.data == 'on':
+            pass
+        else:
+            pass
 
 
 def main(args=None):
