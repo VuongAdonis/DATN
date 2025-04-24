@@ -157,7 +157,7 @@ const app = createApp({
                 name: 'notifyGamepadControl', // Tên topic để thông báo cho robot biết chuyển qua control by gamnepad
                 messageType: 'std_msgs/String'
             });
-            offNotifyGamepadControlTopic();
+            this.offNotifyGamepadControlTopic();
         },
 
         setJoystick() {
@@ -673,7 +673,7 @@ const app = createApp({
                 this.gamepadControlStatus = 0;
                 this.offNotifyGamepadControlTopic();
             }
-        }
+        },
 
     }
 })

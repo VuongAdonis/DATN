@@ -361,23 +361,23 @@ class Dogzilla_Joystick(object):
             return False
 
 
-if __name__ == '__main__':
-    g_debug = False
-    if len(sys.argv) > 1:
-        if str(sys.argv[1]) == "debug":
-            g_debug = True
-    print("debug=", g_debug)
+# if __name__ == '__main__':
+#     g_debug = False
+#     if len(sys.argv) > 1:
+#         if str(sys.argv[1]) == "debug":
+#             g_debug = True
+#     print("debug=", g_debug)
 
-    g_dog = DOGZILLA()
-    js = Dogzilla_Joystick(g_dog, debug=g_debug)
-    try:
-        while True:
-            state = js.joystick_handle()
-            if state != js.STATE_OK:
-                if state == js.STATE_KEY_BREAK:
-                    break
-                time.sleep(1)
-                js.reconnect()
-    except KeyboardInterrupt:
-        pass
-    del js
+#     g_dog = DOGZILLA()
+#     js = Dogzilla_Joystick(g_dog, debug=g_debug)
+#     try:
+#         while True:
+#             state = js.joystick_handle()
+#             if state != js.STATE_OK:
+#                 if state == js.STATE_KEY_BREAK:
+#                     break
+#                 time.sleep(1)
+#                 js.reconnect()
+#     except KeyboardInterrupt:
+#         pass
+#     del js

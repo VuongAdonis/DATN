@@ -102,6 +102,28 @@
                 background-color: rgba(173, 216, 230, 0.99); /* Màu xanh dương chuẩn full */
                 z-index: -1;
             }
+            .tab {
+                display: flex;
+                justify-content: space-evenly; /* Căn đều khoảng cách giữa các nút */
+                background-color: #f1f1f1; /* Màu nền ví dụ */
+                padding: 10px 0;
+            }
+
+            .tablinks {
+                background-color: #ddd;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                font-size: 16px;
+                flex: 1; /* Mỗi nút chiếm đều 1 phần */
+                text-align: center;
+                margin: 0 5px; /* Khoảng cách giữa các nút */
+                transition: background-color 0.3s;
+            }
+
+            .tablinks:hover {
+                background-color: #ccc;
+            }
         </style>
     </head>
 

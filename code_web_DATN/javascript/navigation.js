@@ -113,7 +113,7 @@ function navInit() {
               name: 'notifyGamepadControl', // Tên topic để thông báo cho robot biết chuyển qua control by gamnepad
               messageType: 'std_msgs/String'
             });
-            onNotifyGamepadControlTopic();
+            this.onNotifyGamepadControlTopic();
 
             /* 
             Topic connect to VMware to get map, pose for navigation

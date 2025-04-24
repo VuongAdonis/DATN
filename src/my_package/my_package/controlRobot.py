@@ -13,6 +13,7 @@ from my_package.color_processing import ColorRecognition
 from my_package.face_processing import FaceRecognition
 from my_package.gesture_processing import GestureRecognition
 from my_package.object_processing import ObjectRecognition
+from my_package.gamepad_processing import Dogzilla_Joystick
 
 fontType = cv2.FONT_HERSHEY_SIMPLEX
 
@@ -40,6 +41,8 @@ class ImagePublisher(Node):
         # Tạo timer để xuất bản tin nhắn liên tục ở tần suất 10 Hz
         # 0.1 giây tương đương 10 Hz
         self.timer = self.create_timer(0.1, self.imagePublish)
+        self.timer2 = self.create_timer(
+            0.1, self.notifyGamepadControl_callback)
 
         self.subscriptionFeature = self.create_subscription(
             String,  # Replace with the actual message type you want to subscribe to
@@ -92,6 +95,8 @@ class ImagePublisher(Node):
         self.faceOn = False
 
         self.frame_count = 0
+        self.js = Dogzilla_Joystick(self.dogControl)
+        self.gamepadState = 0
 
     def imagePublish(self):
         ret, frame = self.cap.read()
@@ -225,12 +230,23 @@ class ImagePublisher(Node):
         cv2.putText(frame, "Tracking", (50, 50),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 0, 255), 2)
 
-    def voice_callback(self, msg):
+    def notifyGamepadControl_callback(self, msg):
         # On/Off the gamepad Control
         if msg.data == 'on':
-            pass
+            self.gamepadState = True
+            print("On gamepad")
         else:
-            pass
+            self.gamepadState = False
+
+    def gamepadHandle(self):
+        print("test", self.gamepadState)
+        if (self.gamepadState):
+            state = self.js.joystick_handle()
+            print("Handle")
+            if state != self.js.STATE_OK:
+                if state == self.js.STATE_KEY_BREAK:
+                    self.gamepadState = False
+                self.js.reconnect()
 
 
 def main(args=None):
