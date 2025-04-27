@@ -297,7 +297,6 @@ const app = createApp({
             this.voiceTopic.publish(voiceMesg);
         },
         subscribeToCamera() {
-            
             this.logs.unshift('UpdateCamera.');
             this.imageTopic.subscribe((message) => {
                 const img = new Image();

@@ -31,8 +31,6 @@
                 <hr>
                 <h5>Commands</h5>
                 <!-- Joystick -->
-                <!-- <button @click="toggleNotifyGamepadControlTopic" :disabled="loading || !connected" class="btn btn-success" v-if="gamepadControlStatus">GamepadControl: {{ gamepadControlStatus ? 'On' : 'Off' }}</button>
-                <button @click="toggleNotifyGamepadControlTopic" :disabled="loading || !connected" class="btn btn-danger" v-if="!gamepadControlStatus">GamepadControl: {{ gamepadControlStatus ? 'On' : 'Off' }}</button> -->
 
                 <button @click="toggleNotifyGamepadControlTopic" 
                 :disabled="loading || !connected" class="btn btn-success"
@@ -43,6 +41,7 @@
                 </button>
 
                 <button @click="toggleNotifyGamepadControlTopic" 
+                     
                 :disabled="loading || !connected"       
                 class="btn btn-danger" 
                 v-if="!gamepadControlStatus"
@@ -50,7 +49,8 @@
                 GamepadControl: {{ gamepadControlStatus ? 'On' : 'Off' }}
                 </button>
 
-                <div style="display: flex; justify-content: space-around; margin-top: 20px;" v-if="!gamepadControlStatus">
+                <!-- <div style="display: flex; justify-content: space-around; margin-top: 20px;"  v-if="!gamepadControlStatus"> -->
+                <div style="display: flex; justify-content: space-around; margin-top: 20px;" v-if = "!gamepadControlStatus" >
                     <div id="joystick-normal">
                         <div class="handle"></div>
                     </div>

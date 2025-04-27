@@ -12,7 +12,7 @@ function navInit() {
             topic: null,
             message: null,
             // VMWARE
-            ws_address: localStorage.getItem('ws_address') || 'ws://192.168.1.63:9090',
+            ws_address: localStorage.getItem('ws_address') || 'ws://192.168.1.129:9090',
             // ROBOT
             ws_address2: localStorage.getItem('ws_address') || 'ws://192.168.1.221:9090',
             voiceOn: true,
@@ -101,6 +101,12 @@ function navInit() {
                 
                 // window.location.href = 'startPage.html';
             }
+            if (this.ros2) {
+              this.ros2.close();
+              this.connected = false;
+              
+              // window.location.href = 'startPage.html';
+          }
         },
         initNav() {
             this.cameraTopic = new ROSLIB.Topic({
@@ -108,6 +114,7 @@ function navInit() {
               name: '/camera/image_raw/compressed', // Tên topic mà camera phát
               messageType: 'sensor_msgs/msg/CompressedImage'
             });
+
             this.notifyGamepadControlTopic = new ROSLIB.Topic({
               ros: this.ros2,
               name: 'notifyGamepadControl', // Tên topic để thông báo cho robot biết chuyển qua control by gamnepad
@@ -138,6 +145,13 @@ function navInit() {
               ros: this.ros,
               name: 'saveMap', // Tên topic mà camera phát
               messageType: 'std_msgs/String'
+            });
+
+            this.cameraTopic.subscribe((message) => {
+                const img = new Image();
+                img.src = 'data:image/jpeg;base64,' + message.data; // Chuyển đổi dữ liệu thành base64
+                document.getElementById('camera-view-navigation').innerHTML = ''; // Xóa ndung cũ
+                document.getElementById('camera-view-navigation').appendChild(img); // Thêm hình ảnh mớiội 
             });
             
             this.poseTopic.subscribe((message) => { 
